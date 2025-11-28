@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Simple Site</title>
+	<style>
+		:root{--bg:#f7f9fc;--card:#fff;--accent:#2563eb;--muted:#6b7280}
+		*{box-sizing:border-box}
+		body{margin:0;font-family:Segoe UI,Roboto,Helvetica,Arial, sans-serif;background:var(--bg);color:#111}
+		header{background:linear-gradient(90deg,#0ea5e9 0%,#2563eb 100%);color:#fff;padding:18px 24px}
+		.container{max-width:980px;margin:0 auto;padding:24px}
+		nav{display:flex;justify-content:space-between;align-items:center;gap:16px}
+		nav .brand{font-weight:700}
+		.hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;padding:40px 0}
+		.hero h1{margin:0;font-size:2rem}
+		.hero p{color:var(--muted);margin:8px 0 0}
+		.btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none}
+		.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:24px}
+		.card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+		footer{padding:18px 24px;text-align:center;color:var(--muted);font-size:0.95rem}
+		@media(min-width:768px){.hero{grid-template-columns:1fr 360px}.hero h1{font-size:2.4rem}}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<nav>
+				<div class="brand">My Simple Site</div>
+				<div>
+					<a href="#" style="color:rgba(255,255,255,0.9);text-decoration:none;margin-right:12px">Home</a>
+					<a href="#" style="color:rgba(255,255,255,0.9);text-decoration:none">About</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main class="container">
+		<section class="hero">
+			<div>
+				<h1>Welcome to this simple HTML page</h1>
+				<p>Clean, responsive starter layout — ready to customize. No frameworks, just HTML and CSS.</p>
+				<p style="margin-top:16px">
+					<a class="btn" href="#">Get Started</a>
+				</p>
+			</div>
+			<div class="card">
+				<h3 style="margin-top:0">Quick Info</h3>
+				<p style="color:var(--muted);margin:8px 0 0">This demo shows structure, basic styling, and responsive layout. Copy and edit to build your site.</p>
+			</div>
+		</section>
+
+		<section>
+			<h2 style="margin-top:32px">Features</h2>
+			<div class="features">
+				<div class="card"><strong>Responsive</strong><p style="color:var(--muted);margin:8px 0 0">Works on phones and desktop.</p></div>
+				<div class="card"><strong>Simple</strong><p style="color:var(--muted);margin:8px 0 0">Minimal code that's easy to read.</p></div>
+				<div class="card"><strong>Customizable</strong><p style="color:var(--muted);margin:8px 0 0">Change colors, fonts and layout quickly.</p></div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div>Made with ❤️ — Open this file in your browser to view.</div>
+		</div>
+	</footer>
+
+	<!-- To view: open this file in your browser (double-click or drag to browser). -->
+</body>
+</html>
